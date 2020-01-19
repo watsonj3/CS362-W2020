@@ -7,58 +7,40 @@ Created on Jan 16/2020
 
 
 from projects.watsonj3.dominion import Dominion
-import random
-from collections import defaultdict
 from projects.watsonj3.dominion import testUtility
+import random
 
 #Get player names
 player_names = ["Annie","*Ben","*Carla"]
 
 #number of curses and victory cards
-if len(player_names)>2:
-    nV=12
-else:
-    nV=8
+nV = testUtility.getNumVictoryCards(player_names)
 nC = -10 + 10 * len(player_names)
 
-#define box from testUtility package
+#define box from testUtility package (refactored from original)
 box = testUtility.getBoxes(nV)
 
+#define supply_order from testUtility package (refactored from original
+supply_order = testUtility.getSupplyOrder()
 
-supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
-                3:['Silver','Chancellor','Village','Woodcutter','Workshop'],
-                4:['Gardens','Bureaucrat','Feast','Militia','Moneylender','Remodel','Smithy','Spy','Thief','Throne Room'],
-                5:['Duchy','Market','Council Room','Festival','Laboratory','Library','Mine','Witch'],
-                6:['Gold','Adventurer'],8:['Province']}
+#Get 10 random cards
+#random10 = testUtility.getTenRandomCards(box)
 
-#Pick 10 cards from box to be in the supply.
 boxlist = [k for k in box]
 random.shuffle(boxlist)
-random10 = boxlist[:10]
-supply = defaultdict(list,[(k,box[k]) for k in random10])
+#introduce bug here: change boxlist[:10] to boxlist[:8]
+random10 = boxlist[:8]
 
+#initialize supply cards
+supply = testUtility.getSupply(box, random10, player_names, nV, nC, )
 
-#The supply always has these cards
-supply["Copper"]=[Dominion.Copper()]*(60-len(player_names)*7)
-supply["Silver"]=[Dominion.Silver()]*40
-supply["Gold"]=[Dominion.Gold()]*30
-supply["Estate"]=[Dominion.Estate()]*nV
-supply["Duchy"]=[Dominion.Duchy()]*nV
-supply["Province"]=[Dominion.Province()]*nV
-supply["Curse"]=[Dominion.Curse()]*nC
 
 #initialize the trash
 trash = []
 
-#Costruct the Player objects
-players = []
-for name in player_names:
-    if name[0]=="*":
-        players.append(Dominion.ComputerPlayer(name[1:]))
-    elif name[0]=="^":
-        players.append(Dominion.TablePlayer(name[1:]))
-    else:
-        players.append(Dominion.Player(name))
+#construct the Player objects
+players = testUtility.getPlayers(player_names)
+
 
 #Play the game
 turn  = 0
