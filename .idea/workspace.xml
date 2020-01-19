@@ -41,7 +41,7 @@
       <file leaf-file-name="testDominion1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/watsonj3/testDominion1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="510">
               <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding>
                 <element signature="e#80#127#0" expanded="true" />
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testDominion2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testDominion2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/watsonj3/testDominion2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="306">
               <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#79#126#0" expanded="true" />
@@ -74,14 +74,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testUtility.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testUtility.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/watsonj3/dominion/testUtility.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,9 +100,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/projects/watsonj3/dominion/playDominion.py" />
-        <option value="$PROJECT_DIR$/projects/watsonj3/dominion/testUtility.py" />
         <option value="$PROJECT_DIR$/projects/watsonj3/testDominion1.py" />
         <option value="$PROJECT_DIR$/projects/watsonj3/testDominion2.py" />
+        <option value="$PROJECT_DIR$/projects/watsonj3/dominion/testUtility.py" />
       </list>
     </option>
   </component>
@@ -359,19 +357,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/watsonj3/dominion/testUtility.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/watsonj3/testDominion1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="510">
           <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding>
             <element signature="e#80#127#0" expanded="true" />
@@ -381,11 +369,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/watsonj3/testDominion2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="306">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#79#126#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/watsonj3/dominion/testUtility.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

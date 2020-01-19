@@ -1,3 +1,7 @@
+#Author: Jason Watson
+#1/19/2020
+#testUtility file has refactored data functions for playDominion.py
+
 from projects.watsonj3.dominion import Dominion
 import random
 from collections import defaultdict
